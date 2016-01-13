@@ -4,7 +4,7 @@ var ws = require('websocket.io');
 var server = ws.listen(8888, function () {
   console.log('\033[96m Server running at 192.168.33.10:8888 \033[39m');
 });
- 
+
 // クライアントからの接続イベントを処理
 server.on('connection', function(socket) {
   // クライアントからのメッセージ受信イベントを処理
